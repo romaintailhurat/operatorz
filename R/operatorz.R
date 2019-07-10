@@ -60,3 +60,18 @@
   sample(pool, size)
 }
 
+#' Diff operator.
+#'
+#' Wraps the setdiff function.
+#'
+#' @param x A vector
+#' @param y A vector
+#'
+#' @return The vector containing diff
+#' @export
+#'
+#' @examples
+#' 1:10 %<>% c(1, 3, 5)
+`%<>%` <- function(x, y) { # FIXME better naming for params
+  setdiff(x, y)
+}

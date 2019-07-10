@@ -47,3 +47,13 @@ test_that("Sample operator works the way it should", {
     pool %..% "five"
   )
 })
+
+# %<>%
+test_that("Diff operator is neat", {
+  df_diff <- iris %<>% data.frame(x = iris$Petal.Length)
+
+  expect_identical(
+    names(df_diff),
+    c("Sepal.Length", "Sepal.Width",  "Petal.Width",  "Species")
+  )
+})
