@@ -12,7 +12,7 @@ p <- "path/" %++% "to/" %++% "a.file"
 low_and_up <- letters %++% LETTERS
 ```
 
-**WARNING** : this project is at the moment essentially a toy project for help me build a package, following the [great advices from experts](https://github.com/jennybc/pkg-dev-tutorial) at user2019 conference.
+**WARNING** : this project is at the moment essentially a toy project for helping me handle the steps to building a package, following the [great advices from experts](https://github.com/jennybc/pkg-dev-tutorial) at user2019 conference.
 
 A lot of things to do, including:
 - [ ] adding CI and code coverage
