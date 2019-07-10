@@ -9,9 +9,10 @@ test_that("Sample operator works the way it should", {
   pool <- 1:100
 
   # Normal behaviour
-  expect_equal(
-    length(pool %..% 5),
-    5)
+  expect_length(
+    pool %..% 5,
+    5
+  )
 
   # Handling errors
   expect_error(

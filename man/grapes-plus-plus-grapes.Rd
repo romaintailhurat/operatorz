@@ -17,3 +17,6 @@ The pasted vector
 \description{
 Concat two vectors.
 }
+\examples{
+"yo" \%++\% "da"
+}

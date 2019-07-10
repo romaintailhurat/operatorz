@@ -7,8 +7,16 @@
 needle \%ni\% haystack
 }
 \arguments{
-\item{haystack}{}
+\item{needle}{A vector of things to check}
+
+\item{haystack}{A vector of elements against which the check will be run}
+}
+\value{
+A boolean vector
 }
 \description{
 Basically, it is the opposite of %in%
+}
+\examples{
+c(5, 42) \%ni\% 1:10
 }

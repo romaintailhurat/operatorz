@@ -7,24 +7,22 @@
 #' @export
 #'
 #' @examples
-#' "yo" %++% "da
+#' "yo" %++% "da"
 `%++%` <- function(left, right) {
   paste0(left, right)
 }
 
 
-#' An OR operator for selecting one true value from two.
+#' An OR operator for selecting one non NULL value from two.
 #'
-#' @param x
-#' @param y
+#' @param x A vector
+#' @param y A vector
 #'
-#' @return
+#' @return The selected vector
 #' @export
 #'
 #' @examples
 #' x <- NULL %||% 42
-#' x
-#' [1] 42
 `%||%` <- function(x, y){
   if (is.null(x)) y else x
 }
@@ -33,13 +31,14 @@
 #'
 #' Basically, it is the opposite of %in%
 #'
-#' @param needle
-#' @param haystack
+#' @param needle A vector of things to check
+#' @param haystack A vector of elements against which the check will be run
 #'
-#' @return
+#' @return A boolean vector
 #' @export
 #'
 #' @examples
+#' c(5, 42) %ni% 1:10
 `%ni%` <- function(needle, haystack) {
   Negate(`%in%`)(needle, haystack)
 }

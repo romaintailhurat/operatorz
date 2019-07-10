@@ -2,16 +2,21 @@
 % Please edit documentation in R/operatorz.R
 \name{\%||\%}
 \alias{\%||\%}
-\title{An OR operator for selecting one true value from two.}
+\title{An OR operator for selecting one non NULL value from two.}
 \usage{
 x \%||\% y
 }
 \arguments{
-\item{y}{}
+\item{x}{A vector}
+
+\item{y}{A vector}
+}
+\value{
+The selected vector
 }
 \description{
-An OR operator for selecting one true value from two.
+An OR operator for selecting one non NULL value from two.
 }
 \examples{
-NULL \%||\% 42
+x <- NULL \%||\% 42
 }
