@@ -2,7 +2,7 @@
 % Please edit documentation in R/operatorz.R
 \name{\%++\%}
 \alias{\%++\%}
-\title{Binary operator to concat two vectors.}
+\title{Concat two vectors.}
 \usage{
 left \%++\% right
 }
@@ -15,5 +15,5 @@ left \%++\% right
 The pasted vector
 }
 \description{
-Binary operator to concat two vectors.
+Concat two vectors.
 }

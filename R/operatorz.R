@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+#' "yo" %++% "da
 `%++%` <- function(left, right) {
   paste0(left, right)
 }
@@ -21,12 +22,16 @@
 #' @export
 #'
 #' @examples
-#' NULL %||% 42
+#' x <- NULL %||% 42
+#' x
+#' [1] 42
 `%||%` <- function(x, y){
   if (is.null(x)) y else x
 }
 
 #' Not in operator.
+#'
+#' Basically, it is the opposite of %in%
 #'
 #' @param needle
 #' @param haystack
@@ -36,7 +41,7 @@
 #'
 #' @examples
 `%ni%` <- function(needle, haystack) {
-  Negate(`%in%`)
+  Negate(`%in%`)(needle, haystack)
 }
 
 
