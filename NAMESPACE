@@ -2,5 +2,6 @@
 
 export("%++%")
 export("%..%")
+export("%<>%")
 export("%ni%")
 export("%||%")
